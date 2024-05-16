@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Processing</title>
+</head>
+<body>
+    <h1>Image Processing</h1>
+    <form id="uploadForm" enctype="multipart/form-data">
+        <input type="file" id="imageUpload" name="image_upload">
+        <button type="button" onclick="processImage()">Process Image</button>
+    </form>
+
+    <div id="resultContainer" style="display: none;">
+        <h2>Original Image</h2>
+        <img id="originalImage">
+
+        <h2>Processed Image</h2>
+        <img id="resultImage">
+    </div>
+
+    <script>
+        function processImage() {
+            const fileInput = document.getElementById('imageUpload');
+            const file = fileInput.files[0];
+            const formData = new FormData();
+            formData.append('image_upload', file);
+
+            fetch('/beautify.html', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                displayResult(data.original_image_data, data.result_image);
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        }
+
+        function displayResult(originalImageData, resultImage) {
+            const originalImage = document.getElementById('originalImage');
+            originalImage.src = 'data:image/jpeg;base64,' + originalImageData;
+
+            const resultImageElement = document.getElementById('resultImage');
+            resultImageElement.src = resultImage;
+
+            const resultContainer = document.getElementById('resultContainer');
+            resultContainer.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
