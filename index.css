@@ -1,0 +1,7 @@
+#snipCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    border: 2px dashed red; /* Optional: style the bounding box */
+}
