@@ -45,13 +45,13 @@ To run the project locally, you’ll need:
 
   ![image](https://github.com/user-attachments/assets/feddada5-6d6d-4c9c-b529-44553f9d096f)
 
-3. **Add Furniture**: Drag items from the **furniture catalog** and place them in your layout.
+2. **Add Furniture**: Drag items from the **furniture catalog** and place them in your layout.
 
-  ![image](https://github.com/user-attachments/assets/c44e76cd-2176-4eeb-9d03-f3ac689ae850)
+   ![image](https://github.com/user-attachments/assets/c44e76cd-2176-4eeb-9d03-f3ac689ae850)
 
-5. **3D Visualization**: Switch to **3D mode** to view and interact with your design in real-time.
-
-   ![image](https://github.com/user-attachments/assets/15e51fd1-0270-4bc9-88d8-f33dc1adc0f9)
+3. **3D Visualization**: Switch to **3D mode** to view and interact with your design in real-time.
+  
+![image](https://github.com/user-attachments/assets/15e51fd1-0270-4bc9-88d8-f33dc1adc0f9)
 
 
 ## 🛠️ Contributing
