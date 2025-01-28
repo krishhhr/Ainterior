@@ -19,8 +19,8 @@ To run the project locally, you’ll need:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/furnishup/blueprint3d.git
-   cd blueprint3d
+   git clone https://github.com/krishhhr/Ainterior.git
+   cd Ainterior
    ```
 
 2. **Install dependencies**:
